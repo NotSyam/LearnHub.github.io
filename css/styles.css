@@ -1,0 +1,223 @@
+/* styles.css */
+
+/* Root variables for consistent styling */
+:root {
+  --primary-color: #2c3e50; /* Dark blue-gray */
+  --secondary-color: #3498db; /* Light blue */
+  --accent-color: #e74c3c; /* Reddish-orange */
+  --neutral-light: #f9f9f9; /* Very light gray */
+  --neutral-medium: #bdc3c7; /* Medium gray */
+  --neutral-dark: #7f8c8d; /* Dark gray */
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --border-radius: 5px;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* General body styles */
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: var(--neutral-light);
+  color: var(--primary-color);
+  line-height: 1.6;
+}
+
+/* General container for consistent padding */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+/* Links */
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Forms */
+input[type='text'],
+input[type='email'],
+input[type='password'],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--neutral-medium);
+  border-radius: var(--border-radius);
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  font-family: inherit;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--neutral-dark);
+}
+
+/* Navigation */
+nav {
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  nav ul {
+    display: none; /* Hide navigation on small screens initially */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid var(--neutral-medium);
+  }
+
+  nav ul li:last-child {
+    border-bottom: none;
+  }
+
+  nav .menu-icon {
+    display: block; /* Show menu icon on small screens */
+    cursor: pointer;
+  }
+
+  nav ul.show {
+    display: flex; /* Show navigation when the menu icon is clicked */
+  }
+}
+
+/* Menu Icon (For Mobile Navigation) */
+nav .menu-icon {
+  display: none; /* Hidden by default */
+  font-size: 1.5em;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+@charset "utf-8";
+/* CSS Document */
+

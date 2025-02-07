@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnHub - Courses</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/courses.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <a href="index.html" class="logo">LearnHub</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <h2>Our Courses</h2>
+      <p>Explore a wide range of courses to enhance your skills.</p>
+    </div>
+  </header>
+
+  <section class="courses">
+    <div class="container">
+      <div class="filter-section">
+        <h3>Filter Courses</h3>
+        <label for="category">Category:</label>
+        <select id="category">
+          <option value="all">All</option>
+          <option value="development">Development</option>
+          <option value="design">Design</option>
+          <option value="marketing">Marketing</option>
+        </select>
+
+        <label for="sort">Sort By:</label>
+        <select id="sort">
+          <option value="popular">Most Popular</option>
+          <option value="newest">Newest</option>
+        </select>
+      </div>
+
+      <div class="courses-grid" id="courses-container">
+        <!-- Course cards will be dynamically added here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <section class="popular-courses">
+    <div class="container">
+      <h2>Most Popular Courses</h2>
+      <div class="courses-grid">
+        <div class="course-card">
+          <img src="image/g2.gif" style="width:100px; height:100px;" alt="Course 1">
+          <h3>Popular Course 1</h3>
+          <p>Description of popular course 1.</p>
+          <a href="course-detail.html" class="btn">View Details</a>
+        </div>
+        <div class="course-card">
+          <img src="image/g2.gif" style="width:100px; height:100px;" alt="Course 2">
+          <h3>Popular Course 2</h3>
+          <p>Description of popular course 2.</p>
+          <a href="course-detail.html" class="btn">View Details</a>
+        </div>
+        <div class="course-card">
+          <img src="image/g2.gif" style="width:100px; height:100px;" alt="Course 3">
+          <h3>Popular Course 3</h3>
+          <p>Description of popular course 3.</p>
+          <a href="course-detail.html" class="btn">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="new-courses">
+    <div class="container">
+      <h2>New Courses</h2>
+      <div class="courses-grid">
+        <div class="course-card">
+          <img src="image/g2.gif" style="width:100px; height:100px;" alt="Course 1">
+          <h3>New Course 1</h3>
+          <p>Description of new course 1.</p>
+          <a href="course-detail.html" class="btn">View Details</a>
+        </div>
+        <div class="course-card">
+          <img src="image/g2.gif" style="width:100px; height:100px;" alt="Course 2">
+          <h3>New Course 2</h3>
+          <p>Description of new course 2.</p>
+          <a href="course-detail.html" class="btn">View Details</a>
+        </div>
+        <div class="course-card">
+          <img src="image/g2.gif" style="width:100px; height:100px;" alt="Course 3">
+          <h3>New Course 3</h3>
+          <p>Description of new course 3.</p>
+          <a href="course-detail.html" class="btn">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 LearnHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/courses.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+/* dashboard.css */
+
+.dashboard {
+  padding: 30px 0;
+}
+
+.enrolled-courses {
+  margin-bottom: 40px;
+}
+
+.enrolled-courses h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.courses-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.course-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.course-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.course-card h3 {
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  background-color: #e9ecef;
+  border-radius: 5px;
+  height: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: var(--secondary-color);
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.upcoming-deadlines {
+  margin-bottom: 40px;
+}
+
+.upcoming-deadlines h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.upcoming-deadlines ul {
+  list-style: none;
+  padding: 0;
+}
+
+.upcoming-deadlines li {
+  padding: 10px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.upcoming-deadlines li:last-child {
+  border-bottom: none;
+}
+
+.certificates {
+  margin-bottom: 40px;
+}
+
+.certificates h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.certificate-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.certificate-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.certificate-card h3 {
+  margin-bottom: 10px;
+}
+
+.certificate-card p {
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .enrolled-courses h2,
+  .upcoming-deadlines h2,
+  .certificates h2 {
+    font-size: 1.8em;
+  }
+}

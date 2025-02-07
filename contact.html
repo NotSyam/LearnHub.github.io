@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnHub - Contact Us</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <a href="index.html" class="logo">LearnHub</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <main class="contact-us">
+    <div class="container">
+      <section class="contact-form">
+        <h2>Contact Us</h2>
+        <p>Have questions? Fill out the form below to get in touch with us.</p>
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </section>
+
+      <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3 class="faq-question">How do I enroll in a course?</h3>
+          <p class="faq-answer">To enroll in a course, simply click the "Enroll Now" button on the course detail page.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">What payment methods do you accept?</h3>
+          <p class="faq-answer">We accept all major credit cards and PayPal.</p>
+        </div>
+        <!-- More FAQ items can be added here -->
+      </section>
+
+      <section class="social-media">
+        <h2>Connect With Us</h2>
+        <div class="social-links">
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 LearnHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+
+</html>
